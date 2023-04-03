@@ -14,7 +14,7 @@ public class Student {
     @Autowired
     private Address add;
 
-    public Student() {
+    public Student(int id, String name, List<Phone> ph, Address add) {
         this.id = id;
         this.name = name;
         this.ph = ph;
