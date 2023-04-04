@@ -8,11 +8,14 @@
     <bean id="student" class="org.example.Student">
         <constructor-arg index="0" value="1234"/>
         <constructor-arg index="1" value="Josh"/>
-        <constructor-arg index="2" ref="phone"/>
+        <constructor-arg index="2">
+            <list>
+                <value>1112223333</value>
+                <value>4445556666</value>
+                <value>7778889999</value>
+            </list>
+        </constructor-arg>
         <constructor-arg index="3" ref="address"/>
-    </bean>
-    <bean id="phone" class="org.example.Phone">
-        <constructor-arg index="0" value="1112223333"/>
     </bean>
     <bean id="address" class="org.example.Address">
         <constructor-arg index="0" value="New York City"/>
