@@ -1,4 +1,4 @@
-package org.example;
+package org.genspark.annotations;
 
 public class Phone {
     private String mob;
@@ -20,3 +20,4 @@ public class Phone {
         return mob;
     }
 }
+

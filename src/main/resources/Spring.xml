@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-    <bean id="student" class="org.example.Student">
+    <bean id="student" class="org.genspark.xml.Student">
         <constructor-arg index="0" value="1234"/>
         <constructor-arg index="1" value="Josh"/>
         <constructor-arg index="2">
@@ -17,7 +17,7 @@
         </constructor-arg>
         <constructor-arg index="3" ref="address"/>
     </bean>
-    <bean id="address" class="org.example.Address">
+    <bean id="address" class="org.genspark.xml.Address">
         <constructor-arg index="0" value="New York City"/>
         <constructor-arg index="1" value="New York"/>
         <constructor-arg index="2" value="USA"/>
